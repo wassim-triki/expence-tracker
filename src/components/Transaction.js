@@ -4,7 +4,6 @@ import { GlobalContext } from "../Context/GlobalState";
 
 const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
-  console.log(deleteTransaction);
   const isIncome = transaction.amount > 0;
   return (
     <li className={isIncome ? "plus" : "minus"}>
